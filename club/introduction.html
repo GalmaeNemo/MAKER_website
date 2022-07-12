@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html lang="ko">
 
+<style>
+    * {
+        font-family: 'Nanum Gothic Coding', monospace;
+    }
+
+    @media (max-width: 600px) {
+        body {
+            overflow: hidden;
+        }
+    }
+</style>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TRENDING NEWS</title>
-
+    <title>INTRODUCTION</title>
 
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="/css/styles.css" rel="stylesheet" />
+
     <!--위의 내비게이션 바 불러오기-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -26,8 +46,77 @@
 
 <body>
     <div id="header"></div>
-    <h1>동아리 소개</h1>
-    <!-- FOOTER 달기 -->
+    <!-- Projects-->
+    <section class="projects-section bg-light" id="projects">
+        <div class="container px-4 px-lg-5">
+            <!-- Featured Project Row-->
+            <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+                <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="/img/makerspace_logo1.png"
+                        alt="..." /></div>
+                <div class="col-xl-4 col-lg-5">
+                    <div style="margin-left: 30px;">
+                        <h4 style="font-weight:1000 ;">메이커스페이스란?</h4>
+                        <p>만들기에 필요한 도구, 장비, 재료가 있는 공간<br>공유경제를 기반으로 공구를 가지고 있지 않은 일반 대중들도 쉽게 만들기에 참여할 수 있다</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Project One Row-->
+            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="/img/makerspace_out1.jpg" alt="..." />
+                    <img class="img-fluid" src="/img/makerspace_out4.png" alt="..." width="100%" />
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-center h-100 project" style="background-color:darkgrey !important">
+                        <div class="d-flex h-100">
+                            <div class="text-white project-text w-100 my-auto text-center text-lg-left">
+                                <h4>외부 전경</h4>
+                                <p style="font-size: 15px;">수업을 진행하거나 각종 장비를 이용해 제작을 하는 공간인 IDEA FACTORY와, 벽 전체가 보드로
+                                    이루어져 자유롭게 의견을 나눌 수 있는 외부 공간으로 이루어져있다</p>
+                                <hr class="d-none d-lg-block mb-0 ms-0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project Two Row-->
+            <div class="row gx-0 justify-content-center">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="/img/makerspace_laser.png" alt="..." width="100%" />
+                    <img class="img-fluid" src="/img/makerspace_3D.png" alt="..." width="100%" />
+                </div>
+                <div class="col-lg-6 order-lg-first">
+                    <div class="text-center h-100 project" style="background-color:darkgrey !important">
+                        <div class="d-flex h-100">
+                            <div class="project-text w-100 my-auto text-center text-lg-right">
+                                <h4 class="text-white">작업공간</h4>
+                                <p style="font-size: 15px; color: white;">- 레이저 커팅기 및 목판, 아크릴<br>- 레이저 커팅기와 3D프린터 도안 작업을 위한 컴퓨터<br>-3D프린터
+                                    소형 4대, 대형 1대 및 필라멘트</p>
+                                <hr class="d-none d-lg-block mb-0 me-0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="/img/makerspace_board.jpg" alt="..." />
+                    <img class="img-fluid" src="/img/makerspace_desk.jpg" alt="..." width="100%" />
+                </div>
+                <div class="col-lg-6">
+                    <div class="text-center h-100 project" style="background-color:darkgrey !important">
+                        <div class="d-flex h-100">
+                            <div class="text-white project-text w-100 my-auto text-center text-lg-left">
+                                <h4>IDEA FACTORY 내부</h4>
+                                <p style="font-size: 15px;">- 화이트 보드를 통한 브레인스토밍 및 수업 가능<br>-넓은 작업 공간</p>
+                                <hr class="d-none d-lg-block mb-0 ms-0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <div id="footer"></div>
 </body>
 
