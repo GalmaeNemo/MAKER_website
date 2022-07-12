@@ -1,0 +1,82 @@
+* {margin: 0; padding: 0;font-family: 'Black Han Sans', sans-serif;}
+li {list-style: none;}
+a {color: black; text-decoration: none;}
+
+#thumbnail {
+    font-size: 50px;
+    position: absolute;
+    height: 70px;
+    width: 400px;
+    margin: -150px 0px 0px -200px;
+    top: 60%;
+    left: 50%;
+    animation-name: logo, fadein;
+    animation-delay: 2s, 0s;
+    animation-duration: 1.5s, 1s;
+    animation-fill-mode:forwards, forwards;
+    animation-timing-function: ease-in-out;
+    }
+
+    .menu {
+        opacity: 0;
+        animation-name: fadein;
+        animation-delay: 2s;
+        animation-duration: 1.5s;
+        animation-fill-mode: forwards;
+        text-align: center;
+    }
+
+    .menu li {
+        display: inline-block;
+        padding: 8px 30px;
+        position: relative; 
+    }
+    
+    .club {
+        position: absolute; 
+        top: 100%; 
+        left: 0;
+        display: none;
+    }
+    
+    .services {
+        position: absolute; 
+        top: 100%; 
+        left: 0;
+        display: none;
+    }
+    
+    .dropMenu_item {
+        font-size: 13px;
+    }
+    
+    .dropMenu {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .menu li:hover .club {display: block;}
+    .menu li:hover .services {display: block;}
+
+@keyframes fadein {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes logo {
+    from {
+                
+    }
+
+    to {
+        font-size: 20px;
+        width: 160px;
+        height: 35px;
+        top: 18%;
+        left: 11.5%;
+    }
+}
